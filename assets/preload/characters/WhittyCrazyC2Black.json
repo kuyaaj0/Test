@@ -1,0 +1,118 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				122,
+				-10
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Whitty Sing note UP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				40,
+				-40
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Whitty Sing Note DOWN",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				83,
+				54
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Whitty Sing Note LEFT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-10,
+				-90
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "whitty sing note right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeft",
+			"indices": [],
+			"name": "Whitty idle dance left"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight",
+			"indices": [],
+			"name": "Whitty idle dance right"
+		},
+		{
+			"offsets": [
+				-23,
+				-62
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "scream",
+			"indices": [],
+			"name": "Whitty Scream"
+		},
+		{
+			"offsets": [
+				-23,
+				-62
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "scream-loop",
+			"indices": [
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			],
+			"name": "Whitty Scream"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/WhittyCrazyC2Black",
+	"position": [
+		-30,
+		-100
+	],
+	"healthicon": "whittyCrazyC2",
+	"flip_x": false,
+	"healthbar_colors": [
+		19,
+		11,
+		53
+	],
+	"camera_position": [
+		0,
+		50
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

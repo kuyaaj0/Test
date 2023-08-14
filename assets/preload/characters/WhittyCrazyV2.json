@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				40,
+				90
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Whitty idle dance",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				200,
+				50
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Whitty Sing note UP",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				170,
+				20
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Whitty Sing Note DOWN",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				190,
+				90
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Whitty Sing Note LEFT",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				70,
+				-80
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "whitty sing note right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				70,
+				-80
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "attack",
+			"indices": [],
+			"name": "Whitty Attack"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/WhittyCrazyV2",
+	"position": [
+		20,
+		-60
+	],
+	"healthicon": "whittyCrazyV",
+	"flip_x": false,
+	"healthbar_colors": [
+		20,
+		16,
+		30
+	],
+	"camera_position": [
+		-20,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
