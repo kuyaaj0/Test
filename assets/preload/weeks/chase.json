@@ -1,0 +1,58 @@
+{
+	"storyName": "Whitty's Last Stand",
+	"difficulties": "Canon",
+	"hideFreeplay": true,
+	"weekBackground": "",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		187,
+		187,
+		187
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Deprave",
+			"whittyC",
+			[
+				46,
+				40,
+				73
+			]
+		],
+		[
+			"Pressure",
+			"whittyC2",
+			[
+				46,
+				40,
+				73
+			]
+		],
+		[
+			"Infernum",
+			"whittyCrazyc",
+			[
+				46,
+				40,
+				73
+			]
+		],
+		[
+			"Vexation",
+			"scary",
+			[
+				1,
+				1,
+				2
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekName": "Nooooo"
+}

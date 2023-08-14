@@ -1,0 +1,58 @@
+{
+	"songs": [
+		[
+			"Gunshot",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"<>",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"<>",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"<>",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hideFreeplay": true,
+	"weekBackground": "",
+	"difficulties": "Canon",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "Breaking the corruption",
+	"weekName": "Custom Week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": false
+}
