@@ -70,17 +70,23 @@ class Note extends FlxSprite
 
 	public var hitHealth:Float = 0.023;
 	public var missHealth:Float = 0.0475;
-	public var rating:String = 'unknown';
-	public var ratingMod:Float = 0; //9 = unknown, 0.25 = shit, 0.5 = bad, 0.75 = good, 1 = sick
-	public var ratingDisabled:Bool = false;
 
 	public var texture(default, set):String = null;
 
 	public var noAnimation:Bool = false;
 	public var hitCausesMiss:Bool = false;
-	public var distance:Float = 2000; //plan on doing scroll directions soon -bb
+	public var distance:Float = 2000;//plan on doing scroll directions soon -bb
 
-	public var hitsoundDisabled:Bool = false;
+	public static var holdArrowScales:Map<String, Float> = [
+		'Future'	=> 0.565,
+		'Chip'		=> 0.565
+	];
+
+	public static var downScrollHoldEndOffset:Map<String, Float> = [
+		'Future'	=> -12.2,
+		'Chip'		=> 13
+	];
+
 
 	private function set_texture(value:String):String {
 		if(texture != value) {
@@ -124,6 +130,7 @@ class Note extends FlxSprite
 		return value;
 	}
 
+	public var originalHeightForCalcs:Float = 6;
 	public function new(strumTime:Float, noteData:Int, ?prevNote:Note, ?sustainNote:Bool = false, ?inEditor:Bool = false)
 	{
 		super();
@@ -172,7 +179,6 @@ class Note extends FlxSprite
 		{
 			alpha = 0.6;
 			multAlpha = 0.6;
-			hitsoundDisabled = true;
 			if(ClientPrefs.downScroll) flipY = true;
 
 			offsetX += width / 2;
@@ -219,7 +225,14 @@ class Note extends FlxSprite
 
 				if(PlayState.isPixelStage) {
 					prevNote.scale.y *= 1.19;
-					prevNote.scale.y *= (6 / height); //Auto adjust note size
+				}
+				else {
+					var holdScale:Float = 1;
+					if(holdArrowScales.exists(ClientPrefs.noteSkin))
+					{
+						holdScale = holdArrowScales.get(ClientPrefs.noteSkin);
+					}
+					prevNote.scale.y *= holdScale;
 				}
 				prevNote.updateHitbox();
 				// prevNote.setGraphicSize();
@@ -235,13 +248,16 @@ class Note extends FlxSprite
 		x += offsetX;
 	}
 
-	var lastNoteOffsetXForPixelAutoAdjusting:Float = 0;
-	var lastNoteScaleToo:Float = 1;
-	public var originalHeightForCalcs:Float = 6;
 	function reloadNote(?prefix:String = '', ?texture:String = '', ?suffix:String = '') {
 		if(prefix == null) prefix = '';
 		if(texture == null) texture = '';
 		if(suffix == null) suffix = '';
+
+		var coolswag:String = '';
+		if(ClientPrefs.noteSkin != 'Default')
+		{
+			coolswag = '-' + ClientPrefs.noteSkin.toLowerCase().replace(' ', '-');
+		}
 		
 		var skin:String = texture;
 		if(texture.length < 1) {
@@ -263,35 +279,22 @@ class Note extends FlxSprite
 		var blahblah:String = arraySkin.join('/');
 		if(PlayState.isPixelStage) {
 			if(isSustainNote) {
-				loadGraphic(Paths.image('pixelUI/' + blahblah + 'ENDS'));
+				loadGraphic(Paths.image('pixelUI/' + blahblah + 'ENDS' + coolswag));
 				width = width / 4;
 				height = height / 2;
 				originalHeightForCalcs = height;
-				loadGraphic(Paths.image('pixelUI/' + blahblah + 'ENDS'), true, Math.floor(width), Math.floor(height));
+				loadGraphic(Paths.image('pixelUI/' + blahblah + 'ENDS' + coolswag), true, Math.floor(width), Math.floor(height));
 			} else {
-				loadGraphic(Paths.image('pixelUI/' + blahblah));
+				loadGraphic(Paths.image('pixelUI/' + blahblah + coolswag));
 				width = width / 4;
 				height = height / 5;
-				loadGraphic(Paths.image('pixelUI/' + blahblah), true, Math.floor(width), Math.floor(height));
+				loadGraphic(Paths.image('pixelUI/' + blahblah + coolswag), true, Math.floor(width), Math.floor(height));
 			}
 			setGraphicSize(Std.int(width * PlayState.daPixelZoom));
 			loadPixelNoteAnims();
 			antialiasing = false;
-
-			if(isSustainNote) {
-				offsetX += lastNoteOffsetXForPixelAutoAdjusting;
-				lastNoteOffsetXForPixelAutoAdjusting = (width - 7) * (PlayState.daPixelZoom / 2);
-				offsetX -= lastNoteOffsetXForPixelAutoAdjusting;
-				
-				/*if(animName != null && !animName.endsWith('end'))
-				{
-					lastScaleY /= lastNoteScaleToo;
-					lastNoteScaleToo = (6 / height);
-					lastScaleY *= lastNoteScaleToo; 
-				}*/
-			}
 		} else {
-			frames = Paths.getSparrowAtlas(blahblah);
+			frames = Paths.getSparrowAtlas(blahblah + coolswag);
 			loadNoteAnims();
 			antialiasing = ClientPrefs.globalAntialiasing;
 		}

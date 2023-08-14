@@ -20,7 +20,6 @@ typedef StageFile = {
 	var boyfriend:Array<Dynamic>;
 	var girlfriend:Array<Dynamic>;
 	var opponent:Array<Dynamic>;
-	var hide_girlfriend:Bool;
 
 	var camera_boyfriend:Array<Float>;
 	var camera_opponent:Array<Float>;
@@ -37,22 +36,14 @@ class StageData {
 		} else if(SONG.song != null) {
 			switch (SONG.song.toLowerCase().replace(' ', '-'))
 			{
-				case 'spookeez' | 'south' | 'monster':
-					stage = 'spooky';
-				case 'pico' | 'blammed' | 'philly' | 'philly-nice':
-					stage = 'philly';
-				case 'milf' | 'satin-panties' | 'high':
-					stage = 'limo';
-				case 'cocoa' | 'eggnog':
-					stage = 'mall';
-				case 'winter-horrorland':
-					stage = 'mallEvil';
-				case 'senpai' | 'roses':
-					stage = 'school';
-				case 'thorns':
-					stage = 'schoolEvil';
+				case 'deprave' | 'pressure':
+					stage = 'corruptionAlley';
+				case 'infernum':
+					stage = 'CrazyCorruptionAlley';
+				case 'vexation' | 'vexation-hell':
+					stage = 'CrazyVexationAlley';
 				default:
-					stage = 'stage';
+					stage = 'ballisticAlley';
 			}
 		} else {
 			stage = 'stage';
@@ -68,7 +59,7 @@ class StageData {
 
 	public static function getStageFile(stage:String):StageFile {
 		var rawJson:String = null;
-		var path:String = SUtil.getPath() + Paths.getPreloadPath('stages/' + stage + '.json');
+		var path:String = Paths.getPreloadPath('stages/' + stage + '.json');
 
 		#if MODS_ALLOWED
 		var modPath:String = Paths.modFolders('stages/' + stage + '.json');

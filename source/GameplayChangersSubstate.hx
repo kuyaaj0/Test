@@ -8,7 +8,6 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.display.FlxGridOverlay;
 import flixel.group.FlxGroup.FlxTypedGroup;
-import flixel.addons.transition.FlxTransitionableState;
 import flixel.math.FlxMath;
 import flixel.text.FlxText;
 import flixel.util.FlxColor;
@@ -59,13 +58,14 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		}
 		optionsArray.push(option);
 
-		/*var option:GameplayOption = new GameplayOption('Playback Rate', 'songspeed', 'float', 1);
+		var option:GameplayOption = new GameplayOption('Playback Rate', 'songspeed', 'float', 1);
 		option.scrollSpeed = 1;
 		option.minValue = 0.5;
-		option.maxValue = 2.5;
-		option.changeValue = 0.1;
+		option.maxValue = 3.0;
+		option.changeValue = 0.05;
 		option.displayFormat = '%vX';
-		optionsArray.push(option);*/
+		option.decimals = 2;
+		optionsArray.push(option);
 
 		var option:GameplayOption = new GameplayOption('Health Gain Multiplier', 'healthgain', 'float', 1);
 		option.scrollSpeed = 2.5;
@@ -155,11 +155,6 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 
 		changeSelection();
 		reloadCheckboxes();
-
-                #if android
-                addVirtualPad(FULL, A_B_C);
-                addPadCamera();
-                #end
 	}
 
 	var nextAccept:Int = 5;
@@ -177,12 +172,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		}
 
 		if (controls.BACK) {
-			#if android
-                        FlxTransitionableState.skipNextTransOut = true;
-			FlxG.resetState();
-                        #else
-                        close();
-                        #end
+			close();
 			ClientPrefs.saveSettings();
 			FlxG.sound.play(Paths.sound('cancelMenu'));
 		}
@@ -296,7 +286,7 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 				}
 			}
 
-			if(controls.RESET #if android || _virtualpad.buttonC.justPressed #end)
+			if(controls.RESET)
 			{
 				for (i in 0...optionsArray.length)
 				{

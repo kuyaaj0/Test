@@ -8,7 +8,6 @@ import lime.utils.Assets;
 import openfl.utils.Assets as OpenFlAssets;
 import haxe.Json;
 import haxe.format.JsonParser;
-import sys.io.File;
 
 using StringTools;
 
@@ -23,7 +22,6 @@ typedef WeekFile =
 	var weekName:String;
 	var freeplayColor:Array<Int>;
 	var startUnlocked:Bool;
-	var hiddenUntilUnlocked:Bool;
 	var hideStoryMode:Bool;
 	var hideFreeplay:Bool;
 	var difficulties:String;
@@ -43,12 +41,9 @@ class WeekData {
 	public var weekName:String;
 	public var freeplayColor:Array<Int>;
 	public var startUnlocked:Bool;
-	public var hiddenUntilUnlocked:Bool;
 	public var hideStoryMode:Bool;
 	public var hideFreeplay:Bool;
 	public var difficulties:String;
-
-	public var fileName:String;
 
 	public static function createWeekFile():WeekFile {
 		var weekFile:WeekFile = {
@@ -60,7 +55,6 @@ class WeekData {
 			weekName: 'Custom Week',
 			freeplayColor: [146, 113, 253],
 			startUnlocked: true,
-			hiddenUntilUnlocked: false,
 			hideStoryMode: false,
 			hideFreeplay: false,
 			difficulties: ''
@@ -69,7 +63,7 @@ class WeekData {
 	}
 
 	// HELP: Is there any way to convert a WeekFile to WeekData without having to put all variables there manually? I'm kind of a noob in haxe lmao
-	public function new(weekFile:WeekFile, fileName:String) {
+	public function new(weekFile:WeekFile) {
 		songs = weekFile.songs;
 		weekCharacters = weekFile.weekCharacters;
 		weekBackground = weekFile.weekBackground;
@@ -78,12 +72,9 @@ class WeekData {
 		weekName = weekFile.weekName;
 		freeplayColor = weekFile.freeplayColor;
 		startUnlocked = weekFile.startUnlocked;
-		hiddenUntilUnlocked = weekFile.hiddenUntilUnlocked;
 		hideStoryMode = weekFile.hideStoryMode;
 		hideFreeplay = weekFile.hideFreeplay;
 		difficulties = weekFile.difficulties;
-
-		this.fileName = fileName;
 	}
 
 	public static function reloadWeekFiles(isStoryMode:Null<Bool> = false)
@@ -92,8 +83,8 @@ class WeekData {
 		weeksLoaded.clear();
 		#if MODS_ALLOWED
 		var disabledMods:Array<String> = [];
-		var modsListPath:String = SUtil.getPath() + 'modsList.txt';
-		var directories:Array<String> = [Paths.mods(), SUtil.getPath() + Paths.getPreloadPath()];
+		var modsListPath:String = 'modsList.txt';
+		var directories:Array<String> = [Paths.mods(), Paths.getPreloadPath()];
 		var originalLength:Int = directories.length;
 		if(FileSystem.exists(modsListPath))
 		{
@@ -133,14 +124,14 @@ class WeekData {
 		var originalLength:Int = directories.length;
 		#end
 
-		var sexList:Array<String> = CoolUtil.coolTextFile(SUtil.getPath() + Paths.getPreloadPath('weeks/weekList.txt'));
+		var sexList:Array<String> = CoolUtil.coolTextFile(Paths.getPreloadPath('weeks/weekList.txt'));
 		for (i in 0...sexList.length) {
 			for (j in 0...directories.length) {
 				var fileToCheck:String = directories[j] + 'weeks/' + sexList[i] + '.json';
 				if(!weeksLoaded.exists(sexList[i])) {
 					var week:WeekFile = getWeekFile(fileToCheck);
 					if(week != null) {
-						var weekFile:WeekData = new WeekData(week, sexList[i]);
+						var weekFile:WeekData = new WeekData(week);
 
 						#if MODS_ALLOWED
 						if(j >= originalLength) {
@@ -191,7 +182,7 @@ class WeekData {
 			var week:WeekFile = getWeekFile(path);
 			if(week != null)
 			{
-				var weekFile:WeekData = new WeekData(week, weekToCheck);
+				var weekFile:WeekData = new WeekData(week);
 				if(i >= originalLength)
 				{
 					#if MODS_ALLOWED
@@ -242,27 +233,5 @@ class WeekData {
 		if(data != null && data.folder != null && data.folder.length > 0) {
 			Paths.currentModDirectory = data.folder;
 		}
-	}
-
-	public static function loadTheFirstEnabledMod()
-	{
-		Paths.currentModDirectory = '';
-		
-		#if MODS_ALLOWED
-		if (FileSystem.exists(SUtil.getPath() + "modsList.txt"))
-		{
-			var list:Array<String> = CoolUtil.listFromString(File.getContent(SUtil.getPath() + "modsList.txt"));
-			var foundTheTop = false;
-			for (i in list)
-			{
-				var dat = i.split("|");
-				if (dat[1] == "1" && !foundTheTop)
-				{
-					foundTheTop = true;
-					Paths.currentModDirectory = dat[0];
-				}
-			}
-		}
-		#end
 	}
 }

@@ -145,7 +145,7 @@ class DialogueBox extends FlxSpriteGroup
 		swagDialogue.sounds = [FlxG.sound.load(Paths.sound('pixelText'), 0.6)];
 		add(swagDialogue);
 
-		dialogue = new Alphabet(0, 80, "", false, true);
+		// dialogue = new Alphabet(0, 80, "", false, true);
 		// dialogue.x = 90;
 		// add(dialogue);
 	}
@@ -183,19 +183,7 @@ class DialogueBox extends FlxSpriteGroup
 			dialogueStarted = true;
 		}
 
-		#if android
-                var justTouched:Bool = false;
-
-		for (touch in FlxG.touches.list)
-		{
-			if (touch.justPressed)
-			{
-				justTouched = true;
-			}
-		}
-		#end
-
-		if(PlayerSettings.player1.controls.ACCEPT #if android || justTouched #end)
+		if(PlayerSettings.player1.controls.ACCEPT)
 		{
 			if (dialogueEnded)
 			{

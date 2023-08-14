@@ -16,6 +16,21 @@ class StrumNote extends FlxSprite
 	public var sustainReduce:Bool = true;
 	
 	private var player:Int;
+
+	private static var strumOffsets:Map<String, Array<Dynamic>> = [
+		'Future' => [
+			[2.5, -2.4],
+			[4.5, -3.4],
+			[3.0, -3.0],
+			[4.0, -1.0]
+		],
+		'Chip' => [
+			[0, 2],
+			[-1, 2],
+			[2, -2],
+			[1, -2]
+		]
+	];
 	
 	public var texture(default, set):String = null;
 	private function set_texture(value:String):String {
@@ -26,6 +41,7 @@ class StrumNote extends FlxSprite
 		return value;
 	}
 
+	var confirmOffsets:Array<Float> = [0, 0];
 	public function new(x:Float, y:Float, leData:Int, player:Int) {
 		colorSwap = new ColorSwap();
 		shader = colorSwap.shader;
@@ -39,6 +55,15 @@ class StrumNote extends FlxSprite
 		texture = skin; //Load texture and anims
 
 		scrollFactor.set();
+
+		if(strumOffsets.exists(ClientPrefs.noteSkin))
+		{
+			var addOffset:Array<Dynamic> = strumOffsets.get(ClientPrefs.noteSkin);
+			if(noteData < addOffset.length)
+			{
+				confirmOffsets = addOffset[noteData];
+			}
+		}
 	}
 
 	public function reloadNote()
@@ -46,12 +71,18 @@ class StrumNote extends FlxSprite
 		var lastAnim:String = null;
 		if(animation.curAnim != null) lastAnim = animation.curAnim.name;
 
+		var coolswag:String = '';
+		if(ClientPrefs.noteSkin != 'Default')
+		{
+			coolswag = '-' + ClientPrefs.noteSkin.toLowerCase().replace(' ', '-');
+		}
+
 		if(PlayState.isPixelStage)
 		{
-			loadGraphic(Paths.image('pixelUI/' + texture));
+			loadGraphic(Paths.image('pixelUI/' + texture + coolswag));
 			width = width / 4;
 			height = height / 5;
-			loadGraphic(Paths.image('pixelUI/' + texture), true, Math.floor(width), Math.floor(height));
+			loadGraphic(Paths.image('pixelUI/' + texture + coolswag), true, Math.floor(width), Math.floor(height));
 
 			antialiasing = false;
 			setGraphicSize(Std.int(width * PlayState.daPixelZoom));
@@ -82,7 +113,7 @@ class StrumNote extends FlxSprite
 		}
 		else
 		{
-			frames = Paths.getSparrowAtlas(texture);
+			frames = Paths.getSparrowAtlas(texture + coolswag);
 			animation.addByPrefix('green', 'arrowUP');
 			animation.addByPrefix('blue', 'arrowDOWN');
 			animation.addByPrefix('purple', 'arrowLEFT');
@@ -137,7 +168,8 @@ class StrumNote extends FlxSprite
 		}
 		//if(animation.curAnim != null){ //my bad i was upset
 		if(animation.curAnim.name == 'confirm' && !PlayState.isPixelStage) {
-			centerOrigin();
+			centerOffsets();
+			addConfirmOffsets();
 		//}
 		}
 
@@ -158,8 +190,15 @@ class StrumNote extends FlxSprite
 			colorSwap.brightness = ClientPrefs.arrowHSV[noteData % 4][2] / 100;
 
 			if(animation.curAnim.name == 'confirm' && !PlayState.isPixelStage) {
-				centerOrigin();
+				centerOffsets();
+				addConfirmOffsets();
 			}
 		}
+	}
+
+	public function addConfirmOffsets()
+	{
+		offset.x -= confirmOffsets[0];
+		offset.y += confirmOffsets[1];
 	}
 }
