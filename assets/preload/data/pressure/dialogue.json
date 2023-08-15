@@ -1,0 +1,81 @@
+{
+	"dialogue": [
+		{
+			"speed": 0.04,
+			"portrait": "whittyc2",
+			"boxState": "normal",
+			"expression": "hurt",
+			"text": "Ohhh Sh*t."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "whittyc2",
+			"boxState": "normal",
+			"expression": "hurt",
+			"text": "Its's spreadig uncontrollably.."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bfc",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ". . ."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "whittyc2",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Why? Why are you doing this to me?"
+		},
+		{
+			"speed": 0.05,
+			"portrait": "whittyc2",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "To us?"
+		},
+		{
+			"speed": 0.08,
+			"portrait": "whittyc2",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "To everybody else?.."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bfc",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ". . ."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "whittyc2",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "Fine then. If I have to force my way out of this problem.."
+		},
+		{
+			"speed": 0.08,
+			"portrait": "whittyc2",
+			"boxState": "normal",
+			"expression": "hurt",
+			"text": "I will."
+		},
+		{
+			"speed": 0.08,
+			"portrait": "whittyc2",
+			"boxState": "normal",
+			"expression": "hurt",
+			"text": "No matter what it takes..."
+		},
+		{
+			"speed": 0.05,
+			"portrait": "bfc",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": ". . . *small laugh*"
+		}
+	]
+}
