@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="BallisticBackground.png">
+	<SubTexture name="BallisticBackground idle0000" x="0" y="0" width="2554" height="1279" frameX="0" frameY="0" frameWidth="2554" frameHeight="1279" />
+	<SubTexture name="BallisticBackground idle0001" x="0" y="0" width="2554" height="1279" frameX="0" frameY="0" frameWidth="2554" frameHeight="1279" />
+	<SubTexture name="BallisticBackground idle0002" x="2554" y="0" width="2554" height="1279" frameX="0" frameY="0" frameWidth="2554" frameHeight="1279" />
+	<SubTexture name="BallisticBackground idle0003" x="2554" y="0" width="2554" height="1279" frameX="0" frameY="0" frameWidth="2554" frameHeight="1279" />
+	<SubTexture name="BallisticBackground idle0004" x="0" y="1279" width="2554" height="1279" frameX="0" frameY="0" frameWidth="2554" frameHeight="1279" />
+	<SubTexture name="BallisticBackground idle0005" x="0" y="1279" width="2554" height="1279" frameX="0" frameY="0" frameWidth="2554" frameHeight="1279" />
+	<SubTexture name="BallisticBackground idle0006" x="2554" y="1279" width="2554" height="1279" frameX="0" frameY="0" frameWidth="2554" frameHeight="1279" />
+	<SubTexture name="BallisticBackground idle0007" x="2554" y="1279" width="2554" height="1279" frameX="0" frameY="0" frameWidth="2554" frameHeight="1279" />
+</TextureAtlas>

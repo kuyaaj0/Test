@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="crack.png">
+	<SubTexture name="crack0000" x="0" y="0" width="2537" height="1408" frameX="0" frameY="0" frameWidth="2537" frameHeight="1408" />
+	<SubTexture name="crack0001" x="0" y="0" width="2537" height="1408" frameX="0" frameY="0" frameWidth="2537" frameHeight="1408" />
+	<SubTexture name="crack0002" x="2537" y="0" width="2537" height="1408" frameX="0" frameY="0" frameWidth="2537" frameHeight="1408" />
+	<SubTexture name="crack0003" x="2537" y="0" width="2537" height="1408" frameX="0" frameY="0" frameWidth="2537" frameHeight="1408" />
+	<SubTexture name="crack0004" x="0" y="1408" width="2537" height="1408" frameX="0" frameY="0" frameWidth="2537" frameHeight="1408" />
+	<SubTexture name="crack0005" x="0" y="1408" width="2537" height="1408" frameX="0" frameY="0" frameWidth="2537" frameHeight="1408" />
+	<SubTexture name="crack0006" x="2537" y="1408" width="2537" height="1408" frameX="0" frameY="0" frameWidth="2537" frameHeight="1408" />
+	<SubTexture name="crack0007" x="2537" y="1408" width="2537" height="1408" frameX="0" frameY="0" frameWidth="2537" frameHeight="1408" />
+	<SubTexture name="crack0008" x="0" y="2816" width="2537" height="1408" frameX="0" frameY="0" frameWidth="2537" frameHeight="1408" />
+	<SubTexture name="crack0009" x="0" y="2816" width="2537" height="1408" frameX="0" frameY="0" frameWidth="2537" frameHeight="1408" />
+</TextureAtlas>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="circle.png">
+	<SubTexture name="circle glow0000" x="0" y="0" width="1644" height="1608" frameX="0" frameY="0" frameWidth="1644" frameHeight="1608" />
+	<SubTexture name="circle glow0001" x="0" y="0" width="1644" height="1608" frameX="0" frameY="0" frameWidth="1644" frameHeight="1608" />
+	<SubTexture name="circle glow0002" x="1644" y="0" width="1644" height="1608" frameX="0" frameY="0" frameWidth="1644" frameHeight="1608" />
+	<SubTexture name="circle glow0003" x="1644" y="0" width="1644" height="1608" frameX="0" frameY="0" frameWidth="1644" frameHeight="1608" />
+	<SubTexture name="circle glow0004" x="0" y="1608" width="1644" height="1608" frameX="0" frameY="0" frameWidth="1644" frameHeight="1608" />
+	<SubTexture name="circle glow0005" x="0" y="1608" width="1644" height="1608" frameX="0" frameY="0" frameWidth="1644" frameHeight="1608" />
+	<SubTexture name="circle glow0006" x="1644" y="1608" width="1644" height="1608" frameX="0" frameY="0" frameWidth="1644" frameHeight="1608" />
+	<SubTexture name="circle glow0007" x="1644" y="1608" width="1644" height="1608" frameX="0" frameY="0" frameWidth="1644" frameHeight="1608" />
+	<SubTexture name="circle glow0008" x="0" y="3216" width="1644" height="1608" frameX="0" frameY="0" frameWidth="1644" frameHeight="1608" />
+	<SubTexture name="circle glow0009" x="0" y="3216" width="1644" height="1608" frameX="0" frameY="0" frameWidth="1644" frameHeight="1608" />
+	<SubTexture name="circle glow0010" x="1644" y="3216" width="1644" height="1608" frameX="0" frameY="0" frameWidth="1644" frameHeight="1608" />
+	<SubTexture name="circle glow0011" x="1644" y="3216" width="1644" height="1608" frameX="0" frameY="0" frameWidth="1644" frameHeight="1608" />
+</TextureAtlas>
