@@ -1,0 +1,158 @@
+{
+	"dialogue": [
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bfc"
+		},
+		{
+			"expression": "talk",
+			"text": ". . .",
+			"boxState": "normal",
+			"speed": 0.2,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "You did it..",
+			"boxState": "normal",
+			"speed": 0.1,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "You finally managed to take over..",
+			"boxState": "normal",
+			"speed": 0.1,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.1,
+			"portrait": "bfc"
+		},
+		{
+			"expression": "talk",
+			"text": "All I ever wanted was a normal life..",
+			"boxState": "normal",
+			"speed": 0.055,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "..until you came and destroyed the whole city..",
+			"boxState": "normal",
+			"speed": 0.04,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "...",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bfc"
+		},
+		{
+			"expression": "talk",
+			"text": "killed thousands of innocent lives..",
+			"boxState": "normal",
+			"speed": 0.065,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "..and I will possibly be one of them.",
+			"boxState": "normal",
+			"speed": 0.0599999999999999,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "JUST TELL ME",
+			"boxState": "angry",
+			"speed": 0.025,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "WHY",
+			"boxState": "angry",
+			"speed": 0.025,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "ARE YOU",
+			"boxState": "angry",
+			"speed": 0.025,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "DOING THIS?",
+			"boxState": "angry",
+			"speed": 0.025,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": ". . .",
+			"boxState": "normal",
+			"speed": 0.015,
+			"portrait": "bfc"
+		},
+		{
+			"expression": "talk",
+			"text": "You know what. I don't care anymore",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "Complaining and asking is useless.-",
+			"boxState": "normal",
+			"speed": 0.035,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "The only thing I can do is fighting..",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "No matter what I will kill you.                   I will kill you\\n",
+			"boxState": "angry",
+			"speed": 0.075,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": "I WILL KILL YOU YOU DAMN T3RRORIST",
+			"boxState": "angry",
+			"speed": 0.029,
+			"portrait": "whittycrazyv"
+		},
+		{
+			"expression": "talk",
+			"text": ". . .",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bfc"
+		},
+		{
+			"expression": "talk",
+			"text": ". . .",
+			"boxState": "normal",
+			"speed": 0.05,
+			"portrait": "bfc"
+		}
+	]
+}
