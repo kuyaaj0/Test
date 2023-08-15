@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="WhittyCrazyV_Dialogue.png">
+	<SubTexture name="Whitty Talk0000" x="0" y="0" width="676" height="936" frameX="0" frameY="0" frameWidth="676" frameHeight="936" />
+	<SubTexture name="Whitty Talk0001" x="0" y="936" width="676" height="936" frameX="0" frameY="0" frameWidth="676" frameHeight="936" />
+</TextureAtlas>

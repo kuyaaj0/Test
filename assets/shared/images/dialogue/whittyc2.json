@@ -1,0 +1,50 @@
+{
+	"position": [
+		0,
+		-110
+	],
+	"dialogue_pos": "left",
+	"scale": 1.25,
+	"image": "WhittyC2_Dialogue",
+	"animations": [
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "talk",
+			"idle_name": "Whitty Talk End",
+			"loop_name": "Whitty Talk0"
+		},
+		{
+			"loop_offsets": [
+				0,
+				0
+			],
+			"anim": "confused",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"loop_name": "Whitty Confused0",
+			"idle_name": "Whitty Confused End"
+		},
+		{
+			"loop_name": "Whitty Hurt0",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "Whitty Hurt End",
+			"anim": "hurt",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	]
+}

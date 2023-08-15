@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="WhittyC_Dialogue.png">
+	<SubTexture name="Whitty Talk0000" x="0" y="0" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Talk0001" x="0" y="0" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Talk0002" x="615" y="0" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Talk0003" x="615" y="0" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Talk0004" x="0" y="876" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Talk0005" x="0" y="876" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Talk0006" x="0" y="876" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Talk0007" x="0" y="876" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Talk End0000" x="0" y="876" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Confused0000" x="615" y="876" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Confused0001" x="615" y="876" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Confused0002" x="0" y="1752" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Confused0003" x="0" y="1752" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Confused0004" x="615" y="1752" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Confused0005" x="615" y="1752" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Confused0006" x="615" y="1752" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Confused0007" x="615" y="1752" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+	<SubTexture name="Whitty Confused End0002" x="615" y="1752" width="615" height="876" frameX="0" frameY="0" frameWidth="615" frameHeight="876" />
+</TextureAtlas>
