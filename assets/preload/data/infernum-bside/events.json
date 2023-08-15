@@ -1,0 +1,169 @@
+{
+	"song": {
+		"speed": 3.6,
+		"stage": "ballistic-bside",
+		"player1": "bfB",
+		"player2": "WhittyCrazyB",
+		"player3": null,
+		"events": [
+			[
+				48000,
+				[
+					[
+						"Cinematics",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				57142.8571428572,
+				[
+					[
+						"Cinematics",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				84571.4285714286,
+				[
+					[
+						"Cinematics",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				93714.2857142858,
+				[
+					[
+						"Cinematics",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				120000,
+				[
+					[
+						"Cinematics",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				121142.857142857,
+				[
+					[
+						"Cinematics",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				148571.428571429,
+				[
+					[
+						"Cinematics",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				167999.999999,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyCrazyB2"
+					]
+				]
+			],
+			[
+				168000,
+				[
+					[
+						"Cinematics",
+						"",
+						"2"
+					],
+					[
+						"Flash",
+						"255, 255, 255",
+						""
+					]
+				]
+			],
+			[
+				209142.857142856,
+				[
+					[
+						"Cinematics",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				227428.571428571,
+				[
+					[
+						"Cinematics",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				245714.285714285,
+				[
+					[
+						"Cinematics",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				263999.999999999,
+				[
+					[
+						"Cinematics",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				305142.857142856,
+				[
+					[
+						"Flash",
+						"255, 255, 255",
+						""
+					],
+					[
+						"Change Character",
+						"1",
+						"WhittyCrazyB3"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 210,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Infernum-Bside"
+	}
+}
