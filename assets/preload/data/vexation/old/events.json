@@ -1,1 +1,509 @@
-
+{
+	"song": {
+		"speed": 4,
+		"stage": "CrazyVexationAlley",
+		"player1": "bfC3",
+		"player2": "WhittyCrazyV",
+		"player3": null,
+		"events": [
+			[
+				0,
+				[
+					[
+						"Cinematics",
+						"1",
+						""
+					],
+					[
+						"Screen Shake",
+						"90.85, 0.005",
+						""
+					]
+				]
+			],
+			[
+				10650,
+				[
+					[
+						"Infernum Glow",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				10666.6666666667,
+				[
+					[
+						"Cinematics",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				74666.6666666667,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0.5"
+					]
+				]
+			],
+			[
+				95999.9999999999,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0"
+					],
+					[
+						"Blammed Lights",
+						"6",
+						""
+					]
+				]
+			],
+			[
+				106666.666666667,
+				[
+					[
+						"Blammed Lights",
+						"6",
+						""
+					]
+				]
+			],
+			[
+				108000,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0.25"
+					]
+				]
+			],
+			[
+				109333.333333333,
+				[
+					[
+						"Blammed Lights",
+						"6",
+						""
+					]
+				]
+			],
+			[
+				110666.666666667,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0.25"
+					]
+				]
+			],
+			[
+				112000,
+				[
+					[
+						"Blammed Lights",
+						"6",
+						""
+					]
+				]
+			],
+			[
+				113333.333333333,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0.25"
+					]
+				]
+			],
+			[
+				114666.666666667,
+				[
+					[
+						"Blammed Lights",
+						"6",
+						""
+					]
+				]
+			],
+			[
+				117333.333333333,
+				[
+					[
+						"Blammed Lights",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				122666.666666667,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0.5"
+					]
+				]
+			],
+			[
+				144000,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0.5"
+					]
+				]
+			],
+			[
+				149333.333333333,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0.15"
+					]
+				]
+			],
+			[
+				165333.333333333,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0"
+					]
+				]
+			],
+			[
+				165333.333333333,
+				[
+					[
+						"Infernum Glow",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				165333.333333333,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhityCrazyGray"
+					],
+					[
+						"Change Character",
+						"bf",
+						"bfGrey"
+					]
+				]
+			],
+			[
+				207666.666666667,
+				[
+					[
+						"Play Animation",
+						"scream",
+						"Dad"
+					]
+				]
+			],
+			[
+				208583.333333334,
+				[
+					[
+						"Play Animation",
+						"scream-loop",
+						"Dad"
+					]
+				]
+			],
+			[
+				210000,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				210166.666666667,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				210333.333333334,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				210500,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				210666.666666667,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0"
+					]
+				]
+			],
+			[
+				210666.666666667,
+				[
+					[
+						"Infernum Glow",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				210666.666666667,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bfC5"
+					],
+					[
+						"Change Character",
+						"1",
+						"WhittyCrazyV"
+					]
+				]
+			],
+			[
+				230666.666666667,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				230833.333333334,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231000.000000001,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231166.666666667,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231333.333333334,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231500.000000001,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231666.666666667,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231833.333333334,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231989.583333334,
+				[
+					[
+						"Toggle Trail",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				232000.000000001,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyCrazyV2"
+					]
+				]
+			],
+			[
+				232001.736111112,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0.15"
+					]
+				]
+			],
+			[
+				242666.666666667,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0.15"
+					]
+				]
+			],
+			[
+				253333.333333334,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0.15"
+					]
+				]
+			],
+			[
+				255916.666666667,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyCrazyV"
+					]
+				]
+			],
+			[
+				306416.666666667,
+				[
+					[
+						"Play Animation",
+						"scream",
+						"Dad"
+					]
+				]
+			],
+			[
+				306666.666666667,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0.35"
+					]
+				]
+			],
+			[
+				307333.333333333,
+				[
+					[
+						"Play Animation",
+						"scream-loop",
+						"Dad"
+					]
+				]
+			],
+			[
+				310333.333333333,
+				[
+					[
+						"Play Animation",
+						"idle",
+						"Dad"
+					]
+				]
+			],
+			[
+				311960.416666667,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": "noteSplashes",
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 180,
+		"arrowSkin": "NOTE_assetsC2",
+		"needsVoices": true,
+		"song": "Vexation"
+	}
+}
