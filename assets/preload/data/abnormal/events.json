@@ -1,0 +1,124 @@
+{
+	"song": {
+		"speed": 3.5,
+		"stage": "corruptionAlley",
+		"player1": "bfC2",
+		"player2": "WhittyC2",
+		"player3": null,
+		"events": [
+			[
+				32000,
+				[
+					[
+						"Flash",
+						"255, 255, 255",
+						""
+					],
+					[
+						"Change Character",
+						"BF",
+						"bfC3"
+					]
+				]
+			],
+			[
+				53333.3333333334,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyC2.5"
+					]
+				]
+			],
+			[
+				53336.8055555556,
+				[
+					[
+						"Toggle Trail",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				64000,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyC2"
+					]
+				]
+			],
+			[
+				74666.6666666667,
+				[
+					[
+						"Cinematics",
+						"1",
+						""
+					],
+					[
+						"Flash",
+						"255, 255, 255",
+						""
+					]
+				]
+			],
+			[
+				80000,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyC2.5"
+					]
+				]
+			],
+			[
+				85333.3333333333,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyC2"
+					]
+				]
+			],
+			[
+				95999.9999999999,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyC2.5"
+					],
+					[
+						"Cinematics",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				117333.333333333,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyC2"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 180,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Abnormal"
+	}
+}
