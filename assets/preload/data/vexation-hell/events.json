@@ -1,0 +1,404 @@
+{
+	"song": {
+		"speed": 4,
+		"stage": "CrazyVexationAlley",
+		"player1": "bfC5",
+		"player2": "WhittyCrazyV",
+		"player3": null,
+		"events": [
+			[
+				0,
+				[
+					[
+						"Cinematics",
+						"1",
+						""
+					],
+					[
+						"Screen Shake",
+						"90.85, 0.005",
+						""
+					]
+				]
+			],
+			[
+				10650,
+				[
+					[
+						"Infernum Glow",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				10666.6666666667,
+				[
+					[
+						"Cinematics",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				16000,
+				[
+					[
+						"Trigger Vine Mechanic",
+						"",
+						""
+					]
+				]
+			],
+			[
+				77333.3333333333,
+				[
+					[
+						"Trigger Vine Mechanic",
+						"",
+						""
+					]
+				]
+			],
+			[
+				95999.9999999999,
+				[
+					[
+						"Flash",
+						"255, 255, 255",
+						""
+					],
+					[
+						"Blammed Lights",
+						"3",
+						""
+					]
+				]
+			],
+			[
+				117333.333333333,
+				[
+					[
+						"Blammed Lights",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				122666.666666667,
+				[
+					[
+						"Flash",
+						"255, 255, 255",
+						""
+					]
+				]
+			],
+			[
+				165320.833333333,
+				[
+					[
+						"Flash",
+						"255, 255, 255",
+						""
+					]
+				]
+			],
+			[
+				165333.333333333,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0"
+					]
+				]
+			],
+			[
+				165333.333333333,
+				[
+					[
+						"Infernum Glow",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				165333.333333333,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyCrazyGray"
+					],
+					[
+						"Change Character",
+						"bf",
+						"bfGrey"
+					]
+				]
+			],
+			[
+				210666.666666667,
+				[
+					[
+						"Healthdrain",
+						"game",
+						"0"
+					]
+				]
+			],
+			[
+				210666.666666667,
+				[
+					[
+						"Infernum Glow",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				210666.666666667,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bfC5"
+					],
+					[
+						"Change Character",
+						"1",
+						"WhittyCrazyV"
+					]
+				]
+			],
+			[
+				212000,
+				[
+					[
+						"Trigger Vine Mechanic",
+						"",
+						""
+					]
+				]
+			],
+			[
+				226666.666666667,
+				[
+					[
+						"Trigger Vine Mechanic",
+						"",
+						""
+					]
+				]
+			],
+			[
+				230833.333333334,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231000.000000001,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231166.666666667,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231333.333333334,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231500.000000001,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231666.666666667,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231833.333333334,
+				[
+					[
+						"Add Camera Zoom",
+						"0.02",
+						"0.035"
+					]
+				]
+			],
+			[
+				231916.666666667,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyCrazyV2"
+					]
+				]
+			],
+			[
+				231989.583333334,
+				[
+					[
+						"Toggle Trail",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				232001.736111112,
+				[
+					[
+						"Healthdrain",
+						"dude what the heck with the speed scroll",
+						"0.15"
+					],
+					[
+						"Cinematics",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				232003.472222223,
+				[
+					[
+						"Flash",
+						"255, 255, 255",
+						""
+					]
+				]
+			],
+			[
+				232041.666666667,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bfC5.5"
+					]
+				]
+			],
+			[
+				242666.666666667,
+				[
+					[
+						"Flash",
+						"255, 255, 255",
+						""
+					]
+				]
+			],
+			[
+				253000.000000001,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyCrazyV"
+					]
+				]
+			],
+			[
+				253333.333333334,
+				[
+					[
+						"Flash",
+						"255, 255, 255",
+						""
+					]
+				]
+			],
+			[
+				255500.000000001,
+				[
+					[
+						"Change Character",
+						"1",
+						"WhittyCrazyV"
+					]
+				]
+			],
+			[
+				306416.666666667,
+				[
+					[
+						"Play Animation",
+						"scream",
+						"Dad"
+					]
+				]
+			],
+			[
+				307333.333333333,
+				[
+					[
+						"Play Animation",
+						"scream-loop",
+						"Dad"
+					]
+				]
+			],
+			[
+				310333.333333333,
+				[
+					[
+						"Play Animation",
+						"idle",
+						"Dad"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 180,
+		"arrowSkin": "",
+		"needsVoices": true,
+		"song": "Vexation-hell"
+	}
+}
