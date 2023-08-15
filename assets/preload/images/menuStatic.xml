@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="menuStatic.png">
+	<SubTexture name="static0000" x="0" y="0" width="1924" height="858" frameX="0" frameY="0" frameWidth="1924" frameHeight="858" />
+	<SubTexture name="static0001" x="1924" y="0" width="1924" height="858" frameX="0" frameY="0" frameWidth="1924" frameHeight="858" />
+	<SubTexture name="static0002" x="0" y="858" width="1924" height="858" frameX="0" frameY="0" frameWidth="1924" frameHeight="858" />
+	<SubTexture name="static0003" x="1924" y="858" width="1924" height="858" frameX="0" frameY="0" frameWidth="1924" frameHeight="858" />
+	<SubTexture name="static0004" x="0" y="1716" width="1924" height="858" frameX="0" frameY="0" frameWidth="1924" frameHeight="858" />
+	<SubTexture name="static0005" x="1924" y="1716" width="1924" height="858" frameX="0" frameY="0" frameWidth="1924" frameHeight="858" />
+	<SubTexture name="static0006" x="0" y="2574" width="1924" height="858" frameX="0" frameY="0" frameWidth="1924" frameHeight="858" />
+</TextureAtlas>
