@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="BOIFENDC_SKULLEMOJIS.png">
+	<SubTexture name="BF dies0000" x="0" y="0" width="476" height="470" frameX="0" frameY="0" frameWidth="476" frameHeight="470" />
+	<SubTexture name="BF Dead Loop0000" x="0" y="0" width="476" height="470" frameX="0" frameY="0" frameWidth="476" frameHeight="470" />
+	<SubTexture name="BF Dead confirm0000" x="476" y="0" width="476" height="470" frameX="0" frameY="0" frameWidth="476" frameHeight="470" />
+	<SubTexture name="BF idle dance0000" x="476" y="0" width="476" height="470" frameX="0" frameY="0" frameWidth="476" frameHeight="470" />
+</TextureAtlas>

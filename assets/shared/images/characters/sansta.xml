@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="sansta.png">
+	<SubTexture name="idle0000" x="912" y="584" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+	<SubTexture name="idle0001" x="0" y="584" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+	<SubTexture name="idle0002" x="1824" y="0" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+	<SubTexture name="idle0003" x="912" y="0" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+	<SubTexture name="idle0004" x="0" y="0" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+	<SubTexture name="left0000" x="1824" y="584" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+	<SubTexture name="left0001" x="0" y="1168" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+	<SubTexture name="down0000" x="912" y="1168" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+	<SubTexture name="down0001" x="1824" y="1168" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+	<SubTexture name="right0000" x="0" y="1752" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+	<SubTexture name="right0001" x="912" y="1752" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+	<SubTexture name="up0000" x="1824" y="1752" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+	<SubTexture name="up0001" x="0" y="2336" width="912" height="584" frameX="0" frameY="0" frameWidth="912" frameHeight="584" />
+</TextureAtlas>
