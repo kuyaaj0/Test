@@ -61,7 +61,7 @@ import FunkinLua;
 import DialogueBoxPsych;
 import Shaders;
 import DynamicShaderHandler;
-#if sys
+#if MODS_ALLOWED
 import sys.FileSystem;
 #end
 
@@ -1363,6 +1363,10 @@ class PlayState extends MusicBeatState
 		effect.cameras = [camOther];
 		voiceLine.cameras = [camHUD];
 
+                #if android
+                addAndroidControls();
+                #end
+
 		dialogueBlack = new FlxSprite(0, 0).makeGraphic(FlxG.width * 2, FlxG.height * 2, FlxColor.BLACK);
 		dialogueBlack.screenCenter();
 		if(!isStoryMode)
@@ -2189,7 +2193,9 @@ class PlayState extends MusicBeatState
 		if(ret != FunkinLua.Function_Stop) {
 
 			if (skipCountdown || startOnTime > 0) skipArrowStartTween = true;
-
+                        #if android
+                        androidc.visible = true;
+                        #end
 			generateStaticArrows(0);
 			generateStaticArrows(1);
 			for (i in 0...playerStrums.length) {
@@ -3139,6 +3145,11 @@ class PlayState extends MusicBeatState
 		if(botplayTxt.visible) {
 			botplaySine += 180 * elapsed;
 			botplayTxt.alpha = 1 - Math.sin((Math.PI * botplaySine) / 180);
+		}
+
+		if (controls.PAUSE #if android || FlxG.android.justReleased.BACK #end && startedCountdown && canPause)
+		{
+
 		}
 
 		if (controls.PAUSE && startedCountdown && canPause && SONG.song.toLowerCase() != 'vexation-hell')
@@ -4286,7 +4297,10 @@ for (key => value in luaShaders)
 				return;
 			}
 		}
-		
+
+                #if android
+                androidc.visible = false;
+                #end		
 		timeBarBG.visible = false;
 		timeBar.visible = false;
 		timeTxt.visible = false;
