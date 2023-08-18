@@ -5936,7 +5936,7 @@ for (key => value in luaShaders)
 		}
 		lastBeatHit = curBeat;
 
-		setOnLuas('curBeat', curBeat);//DAWGG?????
+		setOnLuas('curBeat', curBeat); //DAWGG?????
 		callOnLuas('onBeatHit', []);
 	}
 
