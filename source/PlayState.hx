@@ -5933,25 +5933,23 @@ for (key => value in luaShaders)
 		if (curStage == 'corruptionAlley' && FlxG.random.bool(30) && curBeat > lightningStrikeBeat + lightningOffset && SONG.song.toLowerCase() == 'pressure')
 		{
 			lightningStrikeShit();
-		{
-
+		}
 		lastBeatHit = curBeat;
 
 		setOnLuas('curBeat', curBeat);//DAWGG?????
 		callOnLuas('onBeatHit', []);
 	}
-		}
-		{
+
 	public var closeLuas:Array<FunkinLua> = [];
 	public function callOnLuas(event:String, args:Array<Dynamic>):Dynamic {
 		var returnVal:Dynamic = FunkinLua.Function_Continue;
-
 		#if LUA_ALLOWED
-		for (i in 0...luaArray.length) }
+		for (i in 0...luaArray.length) {
 			var ret:Dynamic = luaArray[i].call(event, args);
 			if(ret != FunkinLua.Function_Continue) {
 				returnVal = ret;
 			}
+		}
 
 		for (i in 0...closeLuas.length) {
 			luaArray.remove(closeLuas[i]);
