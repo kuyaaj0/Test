@@ -6032,9 +6032,8 @@ for (key => value in luaShaders)
 		setOnLuas('ratingFC', ratingFC);
 	}
 
-	public static var othersCodeName:String = 'otherAchievements';
 	#if ACHIEVEMENTS_ALLOWED
-	private function checkForAchievement(achievesToCheck:Array<String> = null):String {
+	private function checkForAchievement(achievesToCheck:Array<String> = null):String
 	{
 		if(chartingMode) return null;
 
@@ -6046,7 +6045,6 @@ for (key => value in luaShaders)
 				switch(achievementName)
 				{
 					case 'week1_nomiss' | 'week2_nomiss' | 'week3_nomiss' | 'week4_nomiss' | 'week5_nomiss' | 'week6_nomiss' | 'week7_nomiss':
-			if (achievementName == othersCodeName) {
 				if(isStoryMode && campaignMisses + songMisses < 1 && CoolUtil.difficultyString() == 'HARD' && storyPlaylist.length <= 1 && !changedDifficulty && !usedPractice)
 				{
 					var weekName:String = WeekData.getWeekFileName();
@@ -6068,37 +6066,6 @@ for (key => value in luaShaders)
 									if(achievementName == 'week7_nomiss') unlock = true;
 							}
 						}
-
-					for (json in Achievements.loadedAchievements) {
-						if (json.unlocksAfter == weekName && !Achievements.isAchievementUnlocked(json.icon) && !json.customGoal) unlock = true;
-						achievementName = json.icon;
-					}
-
-					for (k in 0...Achievements.achievementsStuff.length) {
-						var unlockPoint:String = Achievements.achievementsStuff[k][3];
-						if (unlockPoint != null) {
-							if (unlockPoint == weekName && !unlock && !Achievements.isAchievementUnlocked(Achievements.achievementsStuff[k][2])) unlock = true;
-							achievementName = Achievements.achievementsStuff[k][2];
-						}
-					}
-				}
-			}
-
-			for (json in Achievements.loadedAchievements) { //Requires jsons for call
-				var ret:Dynamic = callOnLuas('onCheckForAchievement', [json.icon]); //Set custom goals
-
-				//IDK, like
-				// if getProperty('misses') > 10 and leName == 'lmao_skill_issue' then return Function_Continue end
-
-				if (ret == FunkinLua.Function_Continue && !Achievements.isAchievementUnlocked(json.icon) && json.customGoal && !unlock) {
-					unlock = true;
-					achievementName = json.icon;
-				}
-			}
-
-			if(!Achievements.isAchievementUnlocked(achievementName) && !cpuControlled && !unlock) {
-				switch(achievementName)
-				{
 					case 'ur_bad':
 						if(ratingPercent < 0.2 && !practiceMode) {
 							unlock = true;
