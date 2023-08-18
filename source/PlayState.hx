@@ -5951,6 +5951,7 @@ for (key => value in luaShaders)
 				returnVal = ret;
 			}
 		}
+	{
 
 		for (i in 0...closeLuas.length) {
 			luaArray.remove(closeLuas[i]);
