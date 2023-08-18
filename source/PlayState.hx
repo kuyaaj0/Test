@@ -5940,6 +5940,7 @@ for (key => value in luaShaders)
 		callOnLuas('onBeatHit', []);
 	}
 
+	{
 	public var closeLuas:Array<FunkinLua> = [];
 	}
 	public function callOnLuas(event:String, args:Array<Dynamic>):Dynamic {
