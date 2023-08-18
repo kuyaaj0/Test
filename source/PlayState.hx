@@ -5994,13 +5994,11 @@ for (key => value in luaShaders)
 		{
 			if(totalPlayed < 1) //Prevent divide by 0
 				ratingName = '?';
-		}
 			else
-		{
+		    {
 				// Rating Percent
 				ratingPercent = Math.min(1, Math.max(0, totalNotesHit / totalPlayed));
 				//trace((totalNotesHit / totalPlayed) + ', Total: ' + totalPlayed + ', notes hit: ' + totalNotesHit);
-		}
 
 				// Rating Name
 				if(ratingPercent >= 1)
@@ -6099,7 +6097,8 @@ for (key => value in luaShaders)
 							}
 						}
 					case 'toastie':
-						if(/*ClientPrefs.framerate <= 60 &&*/ ClientPrefs.lowQuality && !ClientPrefs.globalAntialiasing /*&& !ClientPrefs.imagesPersist*/) {
+						if(/*ClientPrefs.framerate <= 60 &&*/ ClientPrefs.lowQuality && !ClientPrefs.globalAntialiasing)
+						{
 							unlock = true;
 						}
 					case 'debugger':
@@ -6107,11 +6106,11 @@ for (key => value in luaShaders)
 							unlock = true;
 						}
 				}
-			}
 
 			if(unlock) {
 				Achievements.unlockAchievement(achievementName);
 				return achievementName;
+			    }
 			}
 		}
 		return null;
