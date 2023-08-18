@@ -5958,7 +5958,6 @@ for (key => value in luaShaders)
 		}
 		#end
 		return returnVal;
-		}
 	}
 
 	public function setOnLuas(variable:String, arg:Dynamic) {
