@@ -5927,7 +5927,8 @@ for (key => value in luaShaders)
 			case 'CrazyVexationAlley':
 				matt.animation.play('bop', true);	
 				crowd.animation.play('bop'); //reducing lag :P	
-				circ.animation.play('glow');	
+				circ.animation.play('glow');
+		}
 		}
 
 		if (curStage == 'corruptionAlley' && FlxG.random.bool(30) && curBeat > lightningStrikeBeat + lightningOffset && SONG.song.toLowerCase() == 'pressure')
@@ -5938,9 +5939,9 @@ for (key => value in luaShaders)
 
 		setOnLuas('curBeat', curBeat); //DAWGG?????
 		callOnLuas('onBeatHit', []);
+	}
 
 	public var closeLuas:Array<FunkinLua> = [];
-
 	public function callOnLuas(event:String, args:Array<Dynamic>):Dynamic {
 		var returnVal:Dynamic = FunkinLua.Function_Continue;
 		#if LUA_ALLOWED
