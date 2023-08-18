@@ -1491,6 +1491,7 @@ class PlayState extends MusicBeatState
 		RecalculateRating();
 
 		//PRECACHING MISS SOUNDS BECAUSE I THINK THEY CAN LAG PEOPLE AND FRICK THEM UP IDK HOW HAXE WORKS
+		if(ClientPrefs.hitsoundVolume > 0) CoolUtil.precacheSound('hitsound');
 		CoolUtil.precacheSound('missnote1');
 		CoolUtil.precacheSound('missnote2');
 		CoolUtil.precacheSound('missnote3');
@@ -5004,6 +5005,11 @@ for (key => value in luaShaders)
 	{
 		if (!note.wasGoodHit)
 		{
+			if (ClientPrefs.hitsoundVolume > 0 && !note.hitsoundDisabled)
+			{
+				FlxG.sound.play(Paths.sound('hitsound'), ClientPrefs.hitsoundVolume);
+			}
+
 			if(cpuControlled && (note.ignoreNote || note.hitCausesMiss)) return;
 
 			if(note.hitCausesMiss) {
@@ -5044,7 +5050,8 @@ for (key => value in luaShaders)
 	
 				var animToPlay:String = singAnimations[Std.int(Math.abs(note.noteData))];
 
-					if(note.gfNote) {
+					if(note.gfNote) 
+					{
 						if(gf != null)
 						{
 							gf.playAnim(animToPlay + daAlt, true);
@@ -5054,7 +5061,7 @@ for (key => value in luaShaders)
 						boyfriend.playAnim(animToPlay + daAlt, true);
 						boyfriend.holdTimer = 0;
 					}
-				//}
+
 				if(note.noteType == 'Hey!') {
 					if(boyfriend.animOffsets.exists('hey')) {
 						boyfriend.playAnim('hey', true);
@@ -5700,6 +5707,7 @@ for (key => value in luaShaders)
 				dad.dance();
 			}
 		} else if(dad.danceIdle && dad.animation.curAnim.name != null && !dad.curCharacter.startsWith('gf') && !dad.animation.curAnim.name.startsWith("sing") && !dad.stunned) {
+		{
 			dad.dance();
 		}
 
@@ -6013,9 +6021,9 @@ for (key => value in luaShaders)
 
 			// Rating FC
 			ratingFC = "";
-			if (sicks > 0) ratingFC = "Semi Full Combo";
-			if (goods > 0) ratingFC = "Good Full Combo";
-			if (bads > 0 || shits > 0) ratingFC = "Full Combo";
+			if (sicks > 0) ratingFC = "SFC";
+			if (goods > 0) ratingFC = "GFC";
+			if (bads > 0 || shits > 0) ratingFC = "FC";
 			if (songMisses > 0 && songMisses < 10) ratingFC = "SDCB";
 			else if (songMisses >= 10) ratingFC = "Clear";
 		}
