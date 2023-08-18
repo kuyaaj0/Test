@@ -5938,9 +5938,9 @@ for (key => value in luaShaders)
 
 		setOnLuas('curBeat', curBeat); //DAWGG?????
 		callOnLuas('onBeatHit', []);
-	}
 
 	public var closeLuas:Array<FunkinLua> = [];
+
 	public function callOnLuas(event:String, args:Array<Dynamic>):Dynamic {
 		var returnVal:Dynamic = FunkinLua.Function_Continue;
 		#if LUA_ALLOWED
