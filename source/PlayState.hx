@@ -5941,8 +5941,6 @@ for (key => value in luaShaders)
 		callOnLuas('onBeatHit', []);
 	}
 
-	{
-
 	public var closeLuas:Array<FunkinLua> = [];
 	public function callOnLuas(event:String, args:Array<Dynamic>):Dynamic {
 		var returnVal:Dynamic = FunkinLua.Function_Continue;
@@ -5952,7 +5950,7 @@ for (key => value in luaShaders)
 			if(ret != FunkinLua.Function_Continue) {
 				returnVal = ret;
 			}
-	}
+		}
 
 		for (i in 0...closeLuas.length) {
 			luaArray.remove(closeLuas[i]);
