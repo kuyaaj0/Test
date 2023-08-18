@@ -5933,12 +5933,13 @@ for (key => value in luaShaders)
 		if (curStage == 'corruptionAlley' && FlxG.random.bool(30) && curBeat > lightningStrikeBeat + lightningOffset && SONG.song.toLowerCase() == 'pressure')
 		{
 			lightningStrikeShit();
-		}
+		{
 
 		lastBeatHit = curBeat;
 
-				setOnLuas('curBeat', curBeat);//DAWGG?????
+		setOnLuas('curBeat', curBeat);//DAWGG?????
 		callOnLuas('onBeatHit', []);
+	}
 	}
 
 	public var closeLuas:Array<FunkinLua> = [];
@@ -5958,6 +5959,7 @@ for (key => value in luaShaders)
 		}
 		#end
 		return returnVal;
+		}
 	}
 
 	public function setOnLuas(variable:String, arg:Dynamic) {
@@ -5995,11 +5997,13 @@ for (key => value in luaShaders)
 		{
 			if(totalPlayed < 1) //Prevent divide by 0
 				ratingName = '?';
+		}
 			else
-			{
+		{
 				// Rating Percent
 				ratingPercent = Math.min(1, Math.max(0, totalNotesHit / totalPlayed));
 				//trace((totalNotesHit / totalPlayed) + ', Total: ' + totalPlayed + ', notes hit: ' + totalNotesHit);
+		}
 
 				// Rating Name
 				if(ratingPercent >= 1)
