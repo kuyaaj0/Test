@@ -5941,11 +5941,10 @@ for (key => value in luaShaders)
 		callOnLuas('onBeatHit', []);
 	}
 
-	{
-
-	public var closeLuas:Array<FunkinLua> = []; { }
-	public function callOnLuas(event:String, args:Array<Dynamic>):Dynamic }
+	public var closeLuas:Array<FunkinLua> = [];
+	public function callOnLuas(event:String, args:Array<Dynamic>):Dynamic {
 		var returnVal:Dynamic = FunkinLua.Function_Continue;
+		}
 		#if LUA_ALLOWED
 		for (i in 0...luaArray.length) {
 			var ret:Dynamic = luaArray[i].call(event, args);
