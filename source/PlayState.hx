@@ -1006,7 +1006,7 @@ class PlayState extends MusicBeatState
 			luaFile = Paths.modFolders(luaFile);
 			doPush = true;
 		} else {
-			luaFile = Paths.getPreloadPath(luaFile);
+			luaFile = SUtil.getPath() + Paths.getPreloadPath(luaFile);
 			if(FileSystem.exists(luaFile)) {
 				doPush = true;
 			}
@@ -1669,18 +1669,11 @@ class PlayState extends MusicBeatState
 				doPush = true;
 			}
 		}
-		
-		if(doPush)
-		{
-			for (lua in luaArray)
-			{
-				if(lua.scriptName == luaFile) return;
-			}
+
+		if(doPush) 
 			luaArray.push(new FunkinLua(luaFile));
-		}
 		#end
-	}
-	
+
   public function addShaderToCamera(cam:String,effect:Dynamic){//STOLE FROM ANDROMEDA
 	  
 	  
