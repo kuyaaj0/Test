@@ -1663,7 +1663,8 @@ class PlayState extends MusicBeatState
 					boyfriendGroup.add(newBoyfriend);
 					startCharacterPos(newBoyfriend);
 					newBoyfriend.alpha = 0.00001;
-					startCharacterLua(newBoyfriend.curCharacter)			luaFile = SUtil.getPath() + Paths.getPreloadPath(luaFile);
+					startCharacterLua(newBoyfriend.curCharacter);
+					luaFile = SUtil.getPath() + Paths.getPreloadPath(luaFile);
 			if(FileSystem.exists(luaFile)) {
 				doPush = true;
 			}
