@@ -1655,7 +1655,7 @@ class PlayState extends MusicBeatState
 	}
 
 	public function addCharacterToList(newCharacter:String, type:Int) {
-		switch(type) }
+		switch(type) {
 			case 0:
 				if(!boyfriendMap.exists(newCharacter)) {
 					var newBoyfriend:Boyfriend = new Boyfriend(0, 0, newCharacter);
