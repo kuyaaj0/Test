@@ -3059,7 +3059,9 @@ class PlayState extends MusicBeatState
 	var finished:Bool = false;
 	var counter:Int = 0;
 
-	override public function update(elapsed:Float) {
+	{
+
+	override public function update(elapsed:Float) 
 	{
 		if (FlxG.keys.justPressed.NINE)
 		{
