@@ -3567,11 +3567,14 @@ class PlayState extends MusicBeatState
 					clearNotesBefore(Conductor.songPosition);
 			}
 		}
+		#end
 
 		setOnLuas('cameraX', camFollowPos.x);
 		setOnLuas('cameraY', camFollowPos.y);
 		setOnLuas('botPlay', cpuControlled);
-		
+		callOnLuas('onUpdatePost', [elapsed]);
+	}
+
 		for (shader in animatedShaders)
 		{
 			shader.update(elapsed);
@@ -3583,7 +3586,7 @@ for (key => value in luaShaders)
 	value.update(elapsed);
 }
 #end
-		callOnLuas('onUpdatePost', [elapsed]);
+
 		for (i in shaderUpdates){
 			i(elapsed);
 		}
