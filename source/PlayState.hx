@@ -1655,7 +1655,7 @@ class PlayState extends MusicBeatState
 	}
 
 	public function addCharacterToList(newCharacter:String, type:Int) {
-		switch(type) {
+		switch(type) }
 			case 0:
 				if(!boyfriendMap.exists(newCharacter)) {
 					var newBoyfriend:Boyfriend = new Boyfriend(0, 0, newCharacter);
@@ -1664,15 +1664,29 @@ class PlayState extends MusicBeatState
 					startCharacterPos(newBoyfriend);
 					newBoyfriend.alpha = 0.00001;
 					startCharacterLua(newBoyfriend.curCharacter);
-					luaFile = SUtil.getPath() + Paths.getPreloadPath(luaFile);
-			if(FileSystem.exists(luaFile)) {
-				doPush = true;
-			}
-		}
+				}
 
-		if(doPush) 
-			luaArray.push(new FunkinLua(luaFile));
-		#end }
+			case 1:
+				if(!dadMap.exists(newCharacter)) {
+					var newDad:Character = new Character(0, 0, newCharacter);
+					dadMap.set(newCharacter, newDad);
+					dadGroup.add(newDad);
+					startCharacterPos(newDad, true);
+					newDad.alpha = 0.00001;
+					startCharacterLua(newDad.curCharacter);
+				}
+
+			case 2:
+				if(gf != null && !gfMap.exists(newCharacter)) {
+					var newGf:Character = new Character(0, 0, newCharacter);
+					newGf.scrollFactor.set(0.95, 0.95);
+					gfMap.set(newCharacter, newGf);
+					gfGroup.add(newGf);
+					startCharacterPos(newGf);
+					newGf.alpha = 0.00001;
+					startCharacterLua(newGf.curCharacter);
+				}
+		}
 	}
 
   public function addShaderToCamera(cam:String,effect:Dynamic){//STOLE FROM ANDROMEDA
