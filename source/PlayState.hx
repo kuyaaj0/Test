@@ -3555,6 +3555,7 @@ class PlayState extends MusicBeatState
 			});
 		}
 		checkEventNote();
+	}
 		
 		#if debug
 		if(!endingSong && !startingSong) {
