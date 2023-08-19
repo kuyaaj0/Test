@@ -3398,7 +3398,7 @@ class PlayState extends MusicBeatState
 
 
 			}
-		}
+		)}
 
 		if (generatedMusic)
 		{
