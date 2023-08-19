@@ -1673,6 +1673,7 @@ class PlayState extends MusicBeatState
 		if(doPush) 
 			luaArray.push(new FunkinLua(luaFile));
 		#end
+		}
 
   public function addShaderToCamera(cam:String,effect:Dynamic){//STOLE FROM ANDROMEDA
 	  
