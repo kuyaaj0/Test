@@ -3058,9 +3058,8 @@ class PlayState extends MusicBeatState
 	var stun:Bool = false;
 	var finished:Bool = false;
 	var counter:Int = 0;
-
-	{
-	override public function update(elapsed:Float) 
+	}
+	override public function update(elapsed:Float)
 	{
 		if (FlxG.keys.justPressed.NINE)
 		{
@@ -3074,8 +3073,6 @@ class PlayState extends MusicBeatState
 				jumpscare.visible = false;
 			}
 		}
-	}
-}
 
 		if(SONG.song.toLowerCase() == 'infernum' || SONG.song.toLowerCase() == 'vexation' 
 			|| SONG.song.toLowerCase() == 'infernum-hell' || SONG.song.toLowerCase() == 'vexation-hell')
